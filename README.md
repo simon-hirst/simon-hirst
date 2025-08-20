@@ -1,16 +1,31 @@
-## Hi there 👋
+# Simon Hirst — Full-stack / Platform Engineer
 
-<!--
-**simon-hirst/simon-hirst** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I modernise .NET systems, ship reliable services, and make on-call boring. I care about fast feedback, clean interfaces, and boring tech done well.
 
-Here are some ideas to get you started:
+**I build**
+- Modern .NET Core services from creaky MVC apps
+- Solid REST/GraphQL APIs with real observability
+- React/TypeScript front-ends that don’t fight the backend
+- CI/CD that kills toil and shortens lead time
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Stacks I reach for**
+C#/.NET (Core, ASP.NET), Go, TypeScript/React/Next.js, Node.js  
+Azure (Functions, App Service, Key Vault), Docker, Kubernetes/OpenShift, Helm, Terraform  
+SQL Server, PostgreSQL, Redis, message brokers (RabbitMQ/IBM MQ)  
+Testing: xUnit/NUnit, integration/contract tests, Jest/RTL/MSW, CI gates (GitHub Actions/Azure DevOps)
+
+**Receipts**
+- Cut container deployment time ~40% by fixing pipelines and builds  
+- Reduced customer-visible incidents ~30% with monitoring + proactive fixes  
+- Lifted automated test coverage from ~65% → ~92% across key services
+
+**Opinions**
+- Ship small, measure everything.  
+- Contracts > tribal knowledge.  
+- Infra as code, or it didn’t happen.  
+- Tests are part of the product, not an afterthought.
+
+**Now**
+Working on payments/B2B SaaS, API performance, and migration paths that don’t nuke teams.
+
+> Want context? Check pinned repos or reach out.
