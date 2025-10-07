@@ -59,15 +59,18 @@ Payments in anger.
 <details>
   <summary><strong>Show personal projects</strong></summary>
 
-- **AI Radio Station v2.0** — 24/7 internet radio with AI DJs, a single synced stream, hourly news/weather, chat, requests, and admin controls.  
-  Backend: Node 20 + Express + Socket.IO; Piper TTS for DJ lines; yt-dlp + FFmpeg for pre-caching and ReplayGain; SQLite for schedule/history; rotation rules; Wikipedia trivia scrape.  
-  Frontend: Next.js with responsive UI and an admin dashboard (veto/approve, force skip, logs).  
-  `TypeScript, Node 20, Express, Socket.IO, Next.js, SQLite, FFmpeg, yt-dlp, Piper TTS`
+## Selected projects
+
+- **AI Radio Station v2.0** — 24/7 internet radio with AI DJs, single synced stream, hourly news/weather, chat, requests, and admin controls.  
+  Backend: Node 20 + Express + Socket.IO, Piper TTS for DJ lines, yt-dlp + FFmpeg for pre-caching and ReplayGain, SQLite for schedule/history, rotation rules, trivia scrape.  
+  Frontend: Next.js, responsive UI, admin dashboard (veto/approve, force skip, logs).  
+  Weather via Open-Meteo. Headlines via BBC RSS. Crossfades and stingers handled in the mixer.  
+  `TypeScript, Node 20, Express, Socket.IO, Next.js, SQLite, FFmpeg, yt-dlp, Piper TTS` **(repo private while in active dev)**
 
 - **Mesmerize (WebGL2 visualiser)** — shader scenes, audio-reactive transitions, overlay mode, plugin hooks.  
-  `TypeScript, WebGL2, GLSL, AudioWorklet, Vite`
+  `TypeScript, WebGL2, GLSL, AudioWorklet, Vite` — **[GitHub](https://github.com/simon-hirst/Mesmerize)**
 
-- **LemonStand (microservice sketch)** — product, orders, and catalogue services; API gateway; queue-backed jobs; local dev with docker-compose.  
-  `Node, Express, MongoDB, Redis, RabbitMQ, Docker, K8s scaffold`
+- **LemonStand (microservice sketch)** — product, orders, and catalogue services, API gateway, queue-backed jobs, local dev with docker-compose.  
+  `Node, Express, MongoDB, Redis, RabbitMQ, Docker, K8s scaffold` — **[GitHub](https://github.com/simon-hirst/lemonstand)**
 
 </details>
