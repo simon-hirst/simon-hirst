@@ -67,9 +67,6 @@ Payments in anger.
 - **LemonStand (microservice sketch)** — product, orders, and catalogue services; API gateway; queue-backed jobs; local dev with docker-compose.  
   `Node, Express, MongoDB, Redis, RabbitMQ, Docker, K8s scaffold`
 
-- **Quantum-Synth-Ultimate** — experimental visualiser and transport layer for audio experiments.  
-  `TypeScript, WebSocket, Web Audio, workerised DSP`
-
 ---
 
 ## Stack
