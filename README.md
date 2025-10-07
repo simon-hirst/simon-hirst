@@ -1,6 +1,6 @@
 # Simon Hirst
 
-I write TypeScript and C#. Some Go. Backends, UIs, and the plumbing in between.
+Senior software engineer. I build dependable web systems end-to-end: TypeScript/React front ends, .NET/Node back ends, SQL that scales, and the ops to keep it steady.
 
 **CV:** [Download (DOCX)](https://raw.githubusercontent.com/simon-hirst/cv/main/Simon-Hirst-CV.docx)
 
@@ -14,38 +14,41 @@ I write TypeScript and C#. Some Go. Backends, UIs, and the plumbing in between.
 ### Freelance — Aug 2024 → present
 
 - **Shopify ↔ ERP stock sync**  
-  Node 20, Express, PostgreSQL, Redis. Webhooks with idempotency keys, retries with backoff, outbox pattern for event delivery. k6 perf baseline, GH Actions matrix tests. Docker images pushed with SBOMs.
+  Node 20 (Express), PostgreSQL, Redis. Webhooks with idempotency keys, outbox pattern, and exponential backoff. k6 baselines, GH Actions matrix tests; images pushed with SBOMs. Reduced duplicate updates and caught race conditions before they hit finance.
 
 - **Bookings + payments revamp**  
-  Next.js + React with server actions, ASP.NET Core API, EF Core on SQL Server. Stripe Checkout and webhooks, rate limits, session-based CSRF, Playwright e2e. CI caching shaved build times from minutes to seconds.
+  Next.js (server actions) + React, ASP.NET Core API, EF Core on SQL Server. Stripe Checkout + webhooks, rate limits, session-based CSRF, Playwright e2e. CI caching took build times from minutes to seconds. Logs and traces made failures boring.
 
 - **Reporting API + GraphQL gateway**  
-  Schema stitching over 5 REST services, Dataloader caching, persisted queries. OpenTelemetry traces to Tempo, metrics to Prometheus, Grafana dashboards keyed to SLOs. Error budgets wired to alert rules.
+  Schema stitching over five REST services, Dataloader caching, persisted queries. OpenTelemetry traces to Grafana Tempo; Prometheus metrics with Grafana boards tied to SLOs. Error budgets wired to alert rules so pages only go off when they should.
 
-- **Live visualizer microsite**  
-  WebGL2/GLSL scenes reacting to audio over WebSocket. AudioWorklet for analysis, frame budgets under 4 ms with typed arrays and preallocated buffers. Deployed behind NGINX with static caching.
+- **Live visualiser microsite**  
+  WebGL2/GLSL scenes reacting to audio over WebSocket. AudioWorklet analysis; frame budget <4 ms via typed arrays + preallocated buffers. Deployed behind NGINX with static caching.
 
 ### IBM — Software Engineer (Jul 2021 → Jul 2024)
-Containerized IBM MQ for Kubernetes/OpenShift. Owned chart and manifests, helped harden defaults, and made upgrades boring:
 
-- Images and Helm values that behave under real load. Probes, resources, and TLS sane by default.  
-- Go utilities that standardize cluster setup, reduce first-run footguns, and validate storage/network policy before rollout.  
-- Observability that SREs actually use: queue depth, throughput, memory, and I/O exported to Prometheus, Grafana boards versioned in Git.  
-- Worked with customer teams on DR tests and cutover plans, then turned the pain into runbooks and checks.
+Containerised IBM MQ on Kubernetes/OpenShift. Owned Helm chart and manifests, hardened defaults, and made upgrades routine.
+
+- Manifests that behave under load (StatefulSets, probes, resources) with TLS and RBAC sane by default.  
+- Go utilities to standardise cluster setup and validate storage/network policy before rollout; cut “first message” failures on fresh clusters.  
+- Telemetry people actually use: queue depth, throughput, memory, I/O exported to Prometheus; Grafana dashboards versioned in Git.  
+- Sat with customers during go-lives (HA, storage, DR tests) and turned the pain into runbooks and checks.
 
 ### Dootrix — Software Engineer (Mar 2020 → Jul 2021)
-Shipped user flows and the APIs that feed them:
+
+Shipped user flows and the APIs that feed them.
 
 - .NET 5 + React features with real validation, email flows, and rate limits.  
-- Azure Functions and queues to replace manual ops. Clear contracts, useful errors.  
-- Tests that stick: xUnit for services, Jest/Playwright for UI, CI gates that block noisy regressions.
+- Azure Functions + queues replacing manual ops. Clear contracts; helpful errors.  
+- Tests that stick: xUnit for services, Jest/Playwright for UI; CI gates that block noisy regressions.
 
 ### Zupa — Software Engineer (Sep 2019 → Mar 2020)
-Payments in anger:
+
+Payments in anger.
 
 - Checkout in ASP.NET Core with idempotent Stripe flows and safe retries.  
-- SQL tuning that removed the slow tail. Background jobs for reconciliation and notifications.  
-- Alerts that fire on symptoms, not guesses, and dashboards humans can read.
+- SQL tuning to cut the slow-query tail; background jobs for reconciliation and notifications.  
+- Alerts on symptoms, not guesses, and dashboards humans can read.
 
 </details>
 
@@ -53,20 +56,19 @@ Payments in anger:
 
 ## Selected projects
 
-- **AI Radio Station v2.0** — 24/7 internet radio with AI DJs, single synced stream, hourly news/weather, chat, requests, and admin controls.  
-  Backend: Node 20 + Express + Socket.IO, Piper TTS for DJ lines, yt-dlp + FFmpeg for pre-caching and ReplayGain, SQLite for schedule/history, rotation rules, trivia scrape.  
-  Frontend: Next.js, responsive UI, admin dashboard (veto/approve, force skip, logs).  
-  Weather via Open-Meteo. Headlines via BBC RSS. Crossfades and stingers handled in the mixer.  
+- **AI Radio Station v2.0** — 24/7 internet radio with AI DJs, a single synced stream, hourly news/weather, chat, requests, and admin controls.  
+  Backend: Node 20 + Express + Socket.IO; Piper TTS for DJ lines; yt-dlp + FFmpeg for pre-caching and ReplayGain; SQLite for schedule/history; rotation rules; Wikipedia trivia scrape.  
+  Frontend: Next.js with responsive UI and an admin dashboard (veto/approve, force skip, logs).  
   `TypeScript, Node 20, Express, Socket.IO, Next.js, SQLite, FFmpeg, yt-dlp, Piper TTS`
 
-- **Mesmerize (WebGL2 visualizer)** — shader scenes, audio-reactive transitions, overlay mode, plugin hooks.  
+- **Mesmerize (WebGL2 visualiser)** — shader scenes, audio-reactive transitions, overlay mode, plugin hooks.  
   `TypeScript, WebGL2, GLSL, AudioWorklet, Vite`
 
-- **LemonStand (microservice sketch)** — product, orders, and catalog services, API gateway, queue-backed jobs, local dev with docker-compose.  
+- **LemonStand (microservice sketch)** — product, orders, and catalogue services; API gateway; queue-backed jobs; local dev with docker-compose.  
   `Node, Express, MongoDB, Redis, RabbitMQ, Docker, K8s scaffold`
 
-- **Quantum-Synth-Ultimate** — experimental visualizer and transport layer for audio experiments.  
-  `TypeScript, WebSocket, Web Audio, workerized DSP`
+- **Quantum-Synth-Ultimate** — experimental visualiser and transport layer for audio experiments.  
+  `TypeScript, WebSocket, Web Audio, workerised DSP`
 
 ---
 
@@ -81,8 +83,8 @@ Payments in anger:
 - **Messaging/Async:** RabbitMQ, Azure Queues  
 - **Payments:** Stripe  
 - **Cloud/Infra:** Docker, Docker Compose, Kubernetes, OpenShift, Helm, NGINX, GitHub Actions, Terraform, Azure, AWS  
-- **Obs:** OpenTelemetry, Prometheus, Grafana  
-- **Testing:** xUnit, Jest, Playwright, k6
+- **Observability:** OpenTelemetry, Prometheus, Grafana, Tempo  
+- **Testing/Perf:** xUnit, Jest, Playwright, k6
 
 **Personal / prototypes**
 
@@ -92,18 +94,3 @@ Payments in anger:
 - **Data:** SQLite, MongoDB, Prisma  
 - **Audio/Media:** FFmpeg, yt-dlp, Web Audio API, Piper TTS, NAudio  
 - **Ops:** PM2, static exports, small Helm charts
-
----
-
-## Education
-
-<details>
-  <summary><strong>Show education</strong></summary>
-
-**BSc Computer Science — University of Liverpool (2015–2019), 2:1**  
-Object detection in OpenCV for project work. Modules: Algorithms, Databases, Distributed Systems, OS, Networks, Software Engineering.
-
-**A-Levels — Isle of Wight College**  
-Chemistry A*, Physics A, Mathematics A.
-
-</details>
