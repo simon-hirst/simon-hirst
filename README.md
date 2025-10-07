@@ -12,7 +12,6 @@ I write TypeScript and C#. Some Go. Backends, UIs, and the plumbing in between.
   <summary><strong>Show experience</strong></summary>
 
 ### Freelance — Aug 2024 → present
-Four typical contracts, one actually fun:
 
 - **Shopify ↔ ERP stock sync**  
   Node 20, Express, PostgreSQL, Redis. Webhooks with idempotency keys, retries with backoff, outbox pattern for event delivery. k6 perf baseline, GH Actions matrix tests. Docker images pushed with SBOMs.
@@ -57,7 +56,8 @@ Payments in anger:
 - **AI Radio Station v2.0** — 24/7 internet radio with AI DJs, single synced stream, hourly news/weather, chat, requests, and admin controls.  
   Backend: Node 20 + Express + Socket.IO, Piper TTS for DJ lines, yt-dlp + FFmpeg for pre-caching and ReplayGain, SQLite for schedule/history, rotation rules, trivia scrape.  
   Frontend: Next.js, responsive UI, admin dashboard (veto/approve, force skip, logs).  
-  Weather via Open-Meteo. Headlines via BBC RSS. Crossfades and stingers handled in the mixer.
+  Weather via Open-Meteo. Headlines via BBC RSS. Crossfades and stingers handled in the mixer.  
+  `TypeScript, Node 20, Express, Socket.IO, Next.js, SQLite, FFmpeg, yt-dlp, Piper TTS`
 
 - **Mesmerize (WebGL2 visualizer)** — shader scenes, audio-reactive transitions, overlay mode, plugin hooks.  
   `TypeScript, WebGL2, GLSL, AudioWorklet, Vite`
