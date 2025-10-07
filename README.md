@@ -1,42 +1,109 @@
 # Simon Hirst
 
+I write TypeScript and C#. Some Go. Backends, UIs, and the plumbing in between.
+
 **CV:** [Download (DOCX)](https://raw.githubusercontent.com/simon-hirst/cv/main/Simon-Hirst-CV.docx)
+
+---
 
 ## Experience
 
 <details>
   <summary><strong>Show experience</strong></summary>
 
-  
-  ### Now — Freelance (Aug 2024 → present)
-  I’ve been taking small to mid-sized builds from kickoff to production. React front ends with real form handling and error states. Node and .NET services with sane auth, input validation, and predictable pagination. PostgreSQL tuned with composite indexes where it matters, Redis on hot paths, and background workers for anything that shouldn’t block a request. CI/CD in GitHub Actions so tests and container builds are quick and deploys roll out behind health checks. Queue-backed jobs replaced brittle nightly scripts, so retries and idempotency are simply how the system works. OpenTelemetry with Prometheus/Grafana added traces and dashboards tied to SLOs; when traffic spikes, p95 stays calm and incidents are boring.
+### Freelance — Aug 2024 → present
+Four typical contracts, one actually fun:
 
-  ### IBM — Software Engineer (Jul 2021 → Jul 2024)
-  I worked on the containerised edition of IBM MQ across Kubernetes and OpenShift. The focus was making supported topologies predictable under real traffic: images packaged with sensible defaults, manifests that behave (StatefulSets, probes, resources), and runbooks that match what operators actually see. I wrote small Go tools that standardised cluster setup and removed the common foot-guns, which cut “first message” failures on new clusters. I sat with customers during rollouts to get TLS, storage, network policies, and disaster-recovery rehearsals right, then fed that learning back into scripts and docs. We added the telemetry people needed (queue depth, throughput, memory, storage IOPS), tightened secure defaults with RBAC and secrets handling, and improved release hygiene so upgrades became routine rather than risky.
+- **Shopify ↔ ERP stock sync**  
+  Node 20, Express, PostgreSQL, Redis. Webhooks with idempotency keys, retries with backoff, outbox pattern for event delivery. k6 perf baseline, GH Actions matrix tests. Docker images pushed with SBOMs.
 
-  ### Dootrix — Software Engineer (Mar 2020 → Jul 2021)
-  I shipped onboarding flows in .NET Core and React that people actually completed. Adding email verification, rate limiting, and clearer validation took a lot of noise out of support. I built REST endpoints and the small client pieces the front end needed, with request validation and useful error responses. I automated CRM sync with Azure Functions, webhooks, and queues, which removed manual entry and saved real hours every month. Test-first habits with xUnit, Jest, and Playwright pushed coverage into the 90s and cut rollbacks. With logs, traces, and straightforward dashboards in place, PMs could see where users were falling off and prioritise fixes that moved the needle.
+- **Bookings + payments revamp**  
+  Next.js + React with server actions, ASP.NET Core API, EF Core on SQL Server. Stripe Checkout and webhooks, rate limits, session-based CSRF, Playwright e2e. CI caching shaved build times from minutes to seconds.
 
-  ### Zupa — Software Engineer (Sep 2019 → Mar 2020)
-  I worked on high-traffic checkout in .NET Core handling seven-figure monthly volume. We integrated Stripe with idempotent payment flows, clear error handling, and safe retries; payment processing ran at roughly four-nines uptime. I tuned SQL with the right indexes and query shapes, fixed connection-pooling issues, and cut the slow-query tail. I wrote background jobs for reconciliation and notifications, and added monitoring and alerts so issues surfaced early. We kept PRs small, shipped often, and documented edge cases so handovers stuck.
+- **Reporting API + GraphQL gateway**  
+  Schema stitching over 5 REST services, Dataloader caching, persisted queries. OpenTelemetry traces to Tempo, metrics to Prometheus, Grafana dashboards keyed to SLOs. Error budgets wired to alert rules.
+
+- **Live visualizer microsite**  
+  WebGL2/GLSL scenes reacting to audio over WebSocket. AudioWorklet for analysis, frame budgets under 4 ms with typed arrays and preallocated buffers. Deployed behind NGINX with static caching.
+
+### IBM — Software Engineer (Jul 2021 → Jul 2024)
+Containerized IBM MQ for Kubernetes/OpenShift. Owned chart and manifests, helped harden defaults, and made upgrades boring:
+
+- Images and Helm values that behave under real load. Probes, resources, and TLS sane by default.  
+- Go utilities that standardize cluster setup, reduce first-run footguns, and validate storage/network policy before rollout.  
+- Observability that SREs actually use: queue depth, throughput, memory, and I/O exported to Prometheus, Grafana boards versioned in Git.  
+- Worked with customer teams on DR tests and cutover plans, then turned the pain into runbooks and checks.
+
+### Dootrix — Software Engineer (Mar 2020 → Jul 2021)
+Shipped user flows and the APIs that feed them:
+
+- .NET 5 + React features with real validation, email flows, and rate limits.  
+- Azure Functions and queues to replace manual ops. Clear contracts, useful errors.  
+- Tests that stick: xUnit for services, Jest/Playwright for UI, CI gates that block noisy regressions.
+
+### Zupa — Software Engineer (Sep 2019 → Mar 2020)
+Payments in anger:
+
+- Checkout in ASP.NET Core with idempotent Stripe flows and safe retries.  
+- SQL tuning that removed the slow tail. Background jobs for reconciliation and notifications.  
+- Alerts that fire on symptoms, not guesses, and dashboards humans can read.
 
 </details>
 
+---
+
+## Selected projects
+
+- **AI Radio Station v2.0** — 24/7 internet radio with AI DJs, single synced stream, hourly news/weather, chat, requests, and admin controls.  
+  Backend: Node 20 + Express + Socket.IO, Piper TTS for DJ lines, yt-dlp + FFmpeg for pre-caching and ReplayGain, SQLite for schedule/history, rotation rules, trivia scrape.  
+  Frontend: Next.js, responsive UI, admin dashboard (veto/approve, force skip, logs).  
+  Weather via Open-Meteo. Headlines via BBC RSS. Crossfades and stingers handled in the mixer.
+
+- **Mesmerize (WebGL2 visualizer)** — shader scenes, audio-reactive transitions, overlay mode, plugin hooks.  
+  `TypeScript, WebGL2, GLSL, AudioWorklet, Vite`
+
+- **LemonStand (microservice sketch)** — product, orders, and catalog services, API gateway, queue-backed jobs, local dev with docker-compose.  
+  `Node, Express, MongoDB, Redis, RabbitMQ, Docker, K8s scaffold`
+
+- **Quantum-Synth-Ultimate** — experimental visualizer and transport layer for audio experiments.  
+  `TypeScript, WebSocket, Web Audio, workerized DSP`
+
+---
+
 ## Stack
 
-C#/.NET, TypeScript/Node, React, SQL/EF Core, PostgreSQL, Redis, Docker, Kubernetes/OpenShift, AWS/Azure, GitHub Actions, Playwright, xUnit, Prometheus, Grafana, OpenTelemetry.
+**Used commercially**
+
+- **Languages:** TypeScript, JavaScript, C#, SQL  
+- **Frontend:** React, Next.js, Tailwind, Blazor, Playwright  
+- **Backend/APIs:** ASP.NET Core, Node.js, Express, REST, GraphQL, WebSockets  
+- **Data:** PostgreSQL, SQL Server, Redis  
+- **Messaging/Async:** RabbitMQ, Azure Queues  
+- **Payments:** Stripe  
+- **Cloud/Infra:** Docker, Docker Compose, Kubernetes, OpenShift, Helm, NGINX, GitHub Actions, Terraform, Azure, AWS  
+- **Obs:** OpenTelemetry, Prometheus, Grafana  
+- **Testing:** xUnit, Jest, Playwright, k6
+
+**Personal / prototypes**
+
+- **Languages:** Go, Python  
+- **Frontend:** WebGL2, GLSL, Socket.IO (client)  
+- **Backend/APIs:** Fastify, WebSocket servers  
+- **Data:** SQLite, MongoDB, Prisma  
+- **Audio/Media:** FFmpeg, yt-dlp, Web Audio API, Piper TTS, NAudio  
+- **Ops:** PM2, static exports, small Helm charts
+
+---
 
 ## Education
 
 <details>
   <summary><strong>Show education</strong></summary>
 
-  
-  **BSc Computer Science — University of Liverpool (2015–2019), 2:1**  
-  Project: real-time object detection with OpenCV (C++), experimenting with feature descriptors and basic tracking.  
-  Modules: Algorithms & Data Structures; Databases; Distributed Systems; Operating Systems; Networks; Software Engineering.  
-  Extras: hackathons and small utilities/scrapers; lab demonstrator for first-year programming workshops.
+**BSc Computer Science — University of Liverpool (2015–2019), 2:1**  
+Object detection in OpenCV for project work. Modules: Algorithms, Databases, Distributed Systems, OS, Networks, Software Engineering.
 
-  **A-Levels — Isle of Wight College (2013–2015)**  
-  Chemistry A*, Physics A, Mathematics A.
+**A-Levels — Isle of Wight College**  
+Chemistry A*, Physics A, Mathematics A.
+
 </details>
