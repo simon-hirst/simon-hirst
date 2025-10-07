@@ -56,6 +56,9 @@ Payments in anger.
 
 ## Selected projects
 
+<details>
+  <summary><strong>Show personal projects</strong></summary>
+
 - **AI Radio Station v2.0** — 24/7 internet radio with AI DJs, a single synced stream, hourly news/weather, chat, requests, and admin controls.  
   Backend: Node 20 + Express + Socket.IO; Piper TTS for DJ lines; yt-dlp + FFmpeg for pre-caching and ReplayGain; SQLite for schedule/history; rotation rules; Wikipedia trivia scrape.  
   Frontend: Next.js with responsive UI and an admin dashboard (veto/approve, force skip, logs).  
@@ -67,27 +70,4 @@ Payments in anger.
 - **LemonStand (microservice sketch)** — product, orders, and catalogue services; API gateway; queue-backed jobs; local dev with docker-compose.  
   `Node, Express, MongoDB, Redis, RabbitMQ, Docker, K8s scaffold`
 
----
-
-## Stack
-
-**Used commercially**
-
-- **Languages:** TypeScript, JavaScript, C#, SQL  
-- **Frontend:** React, Next.js, Tailwind, Blazor, Playwright  
-- **Backend/APIs:** ASP.NET Core, Node.js, Express, REST, GraphQL, WebSockets  
-- **Data:** PostgreSQL, SQL Server, Redis  
-- **Messaging/Async:** RabbitMQ, Azure Queues  
-- **Payments:** Stripe  
-- **Cloud/Infra:** Docker, Docker Compose, Kubernetes, OpenShift, Helm, NGINX, GitHub Actions, Terraform, Azure, AWS  
-- **Observability:** OpenTelemetry, Prometheus, Grafana, Tempo  
-- **Testing/Perf:** xUnit, Jest, Playwright, k6
-
-**Personal / prototypes**
-
-- **Languages:** Go, Python  
-- **Frontend:** WebGL2, GLSL, Socket.IO (client)  
-- **Backend/APIs:** Fastify, WebSocket servers  
-- **Data:** SQLite, MongoDB, Prisma  
-- **Audio/Media:** FFmpeg, yt-dlp, Web Audio API, Piper TTS, NAudio  
-- **Ops:** PM2, static exports, small Helm charts
+</details>
