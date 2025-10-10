@@ -1,8 +1,9 @@
 # Simon Hirst
 
-Senior software engineer. I build dependable web systems end-to-end: TypeScript/React front ends, .NET/Node back ends, SQL that scales, and the ops to keep it steady.
+I write TypeScript and C#. Some Go. Backends, UIs, and the plumbing in between.
 
-**CV:** [Download (DOCX)](https://raw.githubusercontent.com/simon-hirst/cv/main/Simon-Hirst-CV.docx)
+**CV:** [Download (DOCX)](https://raw.githubusercontent.com/simon-hirst/cv/main/Simon-Hirst-CV.docx)  
+**LinkedIn:** https://www.linkedin.com/in/simon-hirst-uk
 
 ---
 
