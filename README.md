@@ -1,7 +1,5 @@
 # Simon Hirst
 
-I write TypeScript and C#. Some Go. Backends, UIs, and the plumbing in between.
-
 **CV:** [Download (DOCX)](https://raw.githubusercontent.com/simon-hirst/cv/main/Simon-Hirst-CV.docx)  
 **LinkedIn:** https://www.linkedin.com/in/simon-hirst-uk
 
