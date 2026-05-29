@@ -1,4 +1,4 @@
-# Simon Hirst
+hey :)
 
 **CV:** [Download (DOCX)](https://raw.githubusercontent.com/simon-hirst/cv/main/Simon-Hirst-CV.docx)  
 **LinkedIn:** https://www.linkedin.com/in/simon-hirst-uk
