@@ -57,7 +57,7 @@ Payments in anger.
 
 ## Recent Personal Projects
 
-- **AI Radio Station v2.0** — 24/7 internet radio with AI DJs, single synced stream, hourly news/weather, chat, requests, and admin controls.  
+- **AI Radio Station v2.0** — (DEVELOPMENT PAUSED) 24/7 internet radio with AI DJs, single synced stream, hourly news/weather, chat, requests, and admin controls.  
   Backend: Node 20 + Express + Socket.IO, Piper TTS for DJ lines, yt-dlp + FFmpeg for pre-caching and ReplayGain, SQLite for schedule/history, rotation rules, trivia scrape.  
   Frontend: Next.js, responsive UI, admin dashboard (veto/approve, force skip, logs).  
   Weather via Open-Meteo. Headlines via BBC RSS. Crossfades and stingers handled in the mixer.  
