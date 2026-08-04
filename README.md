@@ -57,9 +57,7 @@ Payments in anger.
 - **Online Radio Station** — (DEVELOPMENT PAUSED) 24/7 internet radio with AI DJs, single synced stream, hourly news/weather, chat, requests, and admin controls.  
   Backend: Node 20 + Express + Socket.IO, Piper TTS for DJ lines, yt-dlp + FFmpeg for pre-caching and ReplayGain, SQLite for schedule/history, rotation rules, trivia scrape.  
   Frontend: Next.js, responsive UI, admin dashboard (veto/approve, force skip, logs).  
-
----
--->
+  
   Weather via Open-Meteo. Headlines via BBC RSS. Crossfades and stingers handled in the mixer.  
   `TypeScript, Node 20, Express, Socket.IO, Next.js, SQLite, FFmpeg, yt-dlp, Piper TTS` **(repo private while in active dev)**
 
@@ -68,3 +66,5 @@ Payments in anger.
 
 - **LemonStand (microservice sketch)** — product, orders, and catalogue services, API gateway, queue-backed jobs, local dev with docker-compose.  
   `Node, Express, MongoDB, Redis, RabbitMQ, Docker, K8s scaffold` — **[GitHub](https://github.com/simon-hirst/lemonstand)**
+---
+-->
