@@ -1,4 +1,4 @@
-**CV:** [Download (DOCX)](https://raw.githubusercontent.com/simon-hirst/cv/main/Simon-Hirst-CV.docx)  
+**CV:** [Download (PDF)](Simon_Hirst_CV.pdf)  
 **LinkedIn:** https://www.linkedin.com/in/simon-hirst-uk
 
 <!--
